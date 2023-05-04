@@ -2,5 +2,6 @@
 
 Vector<int> arr = new Vector<int>() ;
 
+arr.PushBack(1);
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine(arr[0]);

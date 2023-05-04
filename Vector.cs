@@ -12,13 +12,19 @@ public class Vector<T>
     public Vector()
     {
         this.container = new T[] {};
+        this.container.Initialize();
     }
 
     public T At(int index) => (index < 0) ? (this.container[this.container.Length + index - 1]) : (this.container[index]);
 
-    public void PushBack(T element) => this.container[this.container.Length] = element;
-    public void PopBack() => this.container.SetValue(null, this.container.Length);
-    
+    public void PushBack(T element)
+    {
+        Array.Resize(ref this.container, this.container.Length + 1);
+        this.container[^1] = element;
+    }
+
+    public void PopBack() => Array.Resize(ref this.container, this.container.Length - 1);
+
     public T this[int key]
     {
         get => this.container[key];
