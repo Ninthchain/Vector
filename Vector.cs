@@ -11,10 +11,8 @@ public class Vector<T>
 
     public Vector(T[] elements = default)
     {
-        this.container = elements;
+        this.container = elements is null ? new T[] {} : elements;
     }
-
-    public T At(int index) => (index < 0) ? (this.container[this.container.Length + index - 1]) : (this.container[index]);
 
     public void PushBack(T element)
     {
