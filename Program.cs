@@ -1,6 +1,6 @@
 ﻿using Vector;
 
-Vector<int> arr = new Vector<int>() ;
+Vector<int> arr = new Vector<int>();
 
 arr.PushBack(1);
 

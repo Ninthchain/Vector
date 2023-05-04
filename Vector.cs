@@ -9,10 +9,9 @@ public class Vector<T>
 {
     private T[] container;
 
-    public Vector()
+    public Vector(T[] elements = default)
     {
-        this.container = new T[] {};
-        this.container.Initialize();
+        this.container = elements;
     }
 
     public T At(int index) => (index < 0) ? (this.container[this.container.Length + index - 1]) : (this.container[index]);
@@ -21,6 +20,13 @@ public class Vector<T>
     {
         Array.Resize(ref this.container, this.container.Length + 1);
         this.container[^1] = element;
+    }
+
+    public void PushBack(Vector<T> elementRange)
+    {
+        Array.Resize(ref this.container, elementRange.Size());
+        for (int i = 0; i < elementRange.Size(); i++)
+            this.PushBack(elementRange[i]);
     }
 
     public void PopBack() => Array.Resize(ref this.container, this.container.Length - 1);
