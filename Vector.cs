@@ -24,11 +24,16 @@ public class Vector<T>
     }
 
     public void PopBack() => Array.Resize(ref this.container, this.container.Length - 1);
-
+    
     public T this[int key]
     {
         get => this.container[key];
         set => this.container[key] = value;
+    }
+
+    public int Size()
+    {
+        return this.container.Length;
     }
 
     public Vector<T> GetRange(int begin, int end, Predicate<T>? filter = null)
