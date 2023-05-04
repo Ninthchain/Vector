@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Security.Cryptography.X509Certificates;
 
@@ -7,11 +8,14 @@ namespace Vector;
 
 public class Vector<T>
 {
+    private IEnumerator enumerator;
+    
     private T[] container;
-
+    
+    
     public Vector(T[] elements = default)
     {
-        this.container = elements is null ? new T[] {} : elements;
+        this.container = elements is null ? Array.Empty<T>() : elements;
     }
 
     public void PushBack(T element)
@@ -56,5 +60,10 @@ public class Vector<T>
         }
 
         return result;
+    }
+
+    public ref T[] ToArray()
+    {
+        return ref this.container;
     }
 }
