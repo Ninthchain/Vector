@@ -1,11 +1,24 @@
-<h1>Vector methods</h1>
+<head>
+    <title>Methods</title>
+</head>
 
-<p id="SinglePushBack">Vector&lt;T&gt.<em>PushBack(T element)</em> - adds to vector element to the last position.</p>
-<a href="Examples.md#SinglePushBack"><b>Code example</b></a>
+<h1>METHODS</h1>
+
 
 <p id="RangePushBack">
 
-``Vector<T>.PushBack(Vector<T> elementsRange)`` <b>- Adds to vector range of elements from last position<b>
+``PushBack(T element)`` <b>- Adds to vector element to last position. <br><a href="./Examples.md#SinglePushBack">Example</a><b>
 </p>
-<a href="Examples.md#RangePushBack">Code example</a>
 
+
+<p id="RangePushBack">
+
+``PushBack(Vector<T> elementsRange)`` <b>- Adds to vector range of elements from last position. <br> <a href="./Examples.md#RangePushBack">Example</a><b>
+</p>
+
+
+
+<p id="GetRange">
+
+``PushBack(Vector<T> elementsRange)`` <b>- Adds to vector range of elements from last position. <br> <a href="./Examples.md#GetRange">Example</a><b>
+</p>

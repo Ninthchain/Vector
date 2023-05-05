@@ -5,8 +5,6 @@
 
 <h3>Links</h3>
 <ul>
-<li>
-    <a href="Methods.md"><b>Methods</b></a>
-    
-</li>
+    <li><a href="Methods.md"><b>Methods</b></a></li>
+    <li> <a href="Examples.md"><b>Examples</b></a></li>
 </ul>
