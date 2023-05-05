@@ -1,6 +1,4 @@
-<head>
-    <title>Examples</title>
-</head>
+
 <body>
 <h1 style="text-align: center">Examples</h1>
 
