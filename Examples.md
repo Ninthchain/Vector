@@ -1,10 +1,10 @@
 <head>
     <title>Examples</title>
 </head>
+<body>
+<h1 style="text-align: center">Examples</h1>
 
-<h1>Examples</h1>
-
-<div style="margin: 100px; width: 300px; height: auto">
+<div style="text-align: center">
 
 
 <h4>Hooray!!! Examples!</h4>
@@ -79,3 +79,4 @@ Console.WriteLine($"Sorted even range: {String.Join(", ", evenRange.ToArray())}"
 
 // Use your imagination! Write something for yourself. I am interested in any realization of my Vector
 ```
+</body>
