@@ -1,6 +1,4 @@
-<head>
-    <title>Methods</title>
-</head>
+
 
 <h1>METHODS</h1>
 
