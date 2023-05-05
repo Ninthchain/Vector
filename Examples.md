@@ -1,5 +1,5 @@
 
-<body>
+
 <h1 style="text-align: center">Examples</h1>
 
 <div style="text-align: center">
@@ -12,6 +12,7 @@
 <h1></h1>
 
 <h5 id="SinglePushBack">void PushBack(T element)</h5>
+
 ```csharp
     //Initializing
     Vector<int> numbers = new Vector<int>();
@@ -77,4 +78,3 @@ Console.WriteLine($"Sorted even range: {String.Join(", ", evenRange.ToArray())}"
 
 // Use your imagination! Write something for yourself. I am interested in any realization of my Vector
 ```
-</body>
